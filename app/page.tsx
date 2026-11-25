@@ -35,8 +35,8 @@ export default function HomePage() {
               </svg>
               <span className="device-status" />
             </div>
-            <span className="orbit-label label-top">THINK</span>
-            <span className="orbit-label label-bottom">CHECK · CHOOSE</span>
+            <span className="orbit-label label-top"><T k="home.think" /></span>
+            <span className="orbit-label label-bottom"><T k="home.checkChoose" /></span>
             <span className="orbit-star star-one">✳</span>
             <span className="orbit-star star-two">✳</span>
           </div>
@@ -76,7 +76,7 @@ export default function HomePage() {
           <div>
             <p className="eyebrow"><T k="home.programEyebrow" /></p>
             <h2><T k="home.acknowledgement" /></h2>
-            <p>The views expressed are those of the author and do not necessarily reflect those of the Internet Society.</p>
+            <p><T k="footer.acknowledgement" /></p>
           </div>
         </div>
       </section>

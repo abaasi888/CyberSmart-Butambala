@@ -1,6 +1,6 @@
 import { LessonCard } from "@/components/LessonCard";
 import { T } from "@/components/T";
-import { lessons } from "@/content/lessons";
+import { getLesson, lessons } from "@/content/lessons";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata(
@@ -17,9 +17,12 @@ export default function LessonsPage() {
         <h1><T k="lessons.title" /></h1>
         <p className="page-lede"><T k="lessons.intro" /></p>
       </header>
-      <p className="language-note"><T k="lessons.englishNote" /></p>
       <div className="lesson-grid">
-        {lessons.map((lesson, index) => <LessonCard key={lesson.slug} lesson={lesson} index={index} />)}
+        {lessons.map((lesson, index) => {
+          const translatedLesson = getLesson(lesson.slug, "lg");
+          if (!translatedLesson) throw new Error(`Missing Luganda lesson translation for "${lesson.slug}".`);
+          return <LessonCard key={lesson.slug} lesson={lesson} translatedLesson={translatedLesson} index={index} />;
+        })}
       </div>
     </div>
   );

@@ -34,7 +34,7 @@ export default function AboutPage() {
           <p><T k="about.focus" /></p>
         </section>
         <Callout title={<T k="about.ackTitle" />}>
-          <p>Supported by the Internet Society Fellowship Program. The views expressed are those of the author and do not necessarily reflect those of the Internet Society.</p>
+          <p><T k="footer.acknowledgement" /></p>
         </Callout>
       </div>
     </div>

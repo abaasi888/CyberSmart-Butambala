@@ -9,11 +9,11 @@ export const metadata = pageMetadata(
 );
 
 const downloads: DownloadItem[] = [
-  { file: "cybersmart-book-en.pdf", title: "CyberSmart learning book", languageKey: "downloads.languageEnglish" },
-  { file: "cybersmart-book-lg.pdf", title: "CyberSmart learning book", languageKey: "downloads.languageLuganda" },
-  { file: "primary-guide-en.pdf", title: "Primary learner guide", languageKey: "downloads.languageEnglish" },
-  { file: "primary-guide-lg.pdf", title: "Primary learner guide", languageKey: "downloads.languageLuganda" },
-  { file: "teacher-lesson-plans.pdf", title: "Teacher lesson plans", languageKey: "downloads.languageEnglish" }
+  { file: "cybersmart-book-en.pdf", title: "CyberSmart book", languageKey: "downloads.languageEnglish", approximateSize: "Approx. 43 KB" },
+  { file: "cybersmart-book-lg.pdf", title: "CyberSmart book", languageKey: "downloads.languageLuganda", approximateSize: "Approx. 54 KB" },
+  { file: "primary-guide-en.pdf", title: "Primary safety guide", languageKey: "downloads.languageEnglish", approximateSize: "Approx. 16 KB" },
+  { file: "primary-guide-lg.pdf", title: "Primary safety guide", languageKey: "downloads.languageLuganda", approximateSize: "Approx. 19 KB" },
+  { file: "teacher-lesson-plans.pdf", title: "Teacher lesson plans", languageKey: "downloads.languageEnglish", approximateSize: "Approx. 40 KB" }
 ];
 
 export default function DownloadsPage() {

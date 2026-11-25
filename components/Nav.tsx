@@ -8,6 +8,7 @@ const links = [
   { href: "/", key: "nav.home" as const },
   { href: "/about/", key: "nav.about" as const },
   { href: "/lessons/", key: "nav.lessons" as const },
+  { href: "/scan/", key: "nav.scan" as const },
   { href: "/downloads/", key: "nav.downloads" as const },
   { href: "/license/", key: "nav.license" as const }
 ];

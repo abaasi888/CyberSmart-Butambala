@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { lessons } from "@/content/lessons";
 import { SITE_URL } from "@/lib/seo";
 
-const paths = ["/", "/about/", "/lessons/", "/downloads/", "/license/", "/accessibility/"];
+const paths = ["/", "/about/", "/lessons/", "/scan/", "/downloads/", "/license/", "/accessibility/"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const origin = SITE_URL.replace(/\/+$/, "");
