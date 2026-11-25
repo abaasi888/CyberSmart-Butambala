@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light;
+  --color-ink: #172a3a;
+  --color-muted: #526576;
+  --color-primary: #102b46;
+  --color-primary-deep: #0a1d30;
+  --color-teal: #006e62;
+  --color-teal-dark: #00574e;
+  --color-mint: #b7efdc;
+  --color-paper: #ffffff;
+  --color-wash: #f2f7f5;
+  --color-line: #d7e2de;
+  --color-focus: #a53d0c;
+  --font-body: "Segoe UI", "Noto Sans", Arial, sans-serif;
+  --font-heading: "Avenir Next", Avenir, "Segoe UI", sans-serif;
+  --space-1: .35rem;
+  --space-2: .65rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4.5rem;
+  --container-width: 70rem;
+  --radius-small: .35rem;
+  --radius-card: .65rem;
+  --shadow-card: 0 1rem 2.5rem rgb(16 43 70 / 7%);
+}
