@@ -1,9 +1,21 @@
 import type { ReactNode } from "react";
 
-export function Callout({ title, children, tone = "info" }: { title: ReactNode; children: ReactNode; tone?: "info" | "note" }) {
+export function Callout({
+  title,
+  children,
+  tone = "info",
+  headingLevel = "h2"
+}: {
+  title: ReactNode;
+  children: ReactNode;
+  tone?: "info" | "note";
+  headingLevel?: "h2" | "h3";
+}) {
+  const Heading = headingLevel;
+
   return (
     <aside className={`callout callout-${tone}`}>
-      <h2>{title}</h2>
+      <Heading>{title}</Heading>
       <div>{children}</div>
     </aside>
   );
